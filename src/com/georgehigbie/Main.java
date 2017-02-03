@@ -7,6 +7,6 @@ public class Main {
 
         Window window1 = new Window();
 
-        window1.addButtonPressed();
+        window1.initialize();
     }
 }

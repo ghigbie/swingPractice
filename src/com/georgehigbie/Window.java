@@ -72,19 +72,13 @@ public class Window {
         });
     }
 
-    /**
-     * Create the application. This is the constructor for this Window class.
-     * All of the code here will be executed as soon as a Window object is made.
-     */
-    public Window() {
+
+    public Window() { //constructor for the window class
         initialize();
     }
 
-    /**
-     * Initialize the contents of the frame. This is where Window Builder
-     * will generate its code.
-     */
-    public void initialize() {
+
+    public void initialize() {//initialize contents of frame
 
         frame = new JFrame();
         frame.setBounds(100, 100, 450, 300);
@@ -172,6 +166,7 @@ public class Window {
         JPanel centerPanel = new JPanel();
         buttonAdd = new JButton(">>");
         buttonRemove = new JButton("<<");
+
         buttonAdd.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 addButtonPressed();
